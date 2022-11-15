@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="469.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/menu_background_1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameText" layoutX="274.0" layoutY="121.0" opacity="0.9" prefHeight="30.0" prefWidth="250.0" promptText="username">
+         <effect>
+            <DropShadow height="36.64" radius="18.08" width="37.68">
+               <color>
+                  <Color red="0.21960784494876862" blue="0.6941176652908325" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <TextField fx:id="passwordText" layoutX="274.0" layoutY="169.0" opacity="0.9" prefHeight="30.0" prefWidth="250.0" promptText="password">
+         <effect>
+            <DropShadow height="36.64" radius="18.08" width="37.68">
+               <color>
+                  <Color red="0.21960784494876862" blue="0.6941176652908325" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Button layoutX="299.0" layoutY="245.0" mnemonicParsing="false" onAction="#login" opacity="0.95" prefHeight="35.0" prefWidth="200.0" text="Login">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow height="24.58" radius="12.087499999999999" width="25.77">
+               <color>
+                  <Color green="0.49803921580314636" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="299.0" layoutY="293.0" mnemonicParsing="false" onAction="#signup" opacity="0.95" prefHeight="35.0" prefWidth="200.0" text="Signup">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow height="24.58" radius="12.087499999999999" width="25.77">
+               <color>
+                  <Color green="0.49803921580314636" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="353.0" mnemonicParsing="false" onAction="#exit" opacity="0.95" prefHeight="35.0" prefWidth="200.0" text="Exit">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow height="24.58" radius="12.087499999999999" width="25.77">
+               <color>
+                  <Color green="0.49803921580314636" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

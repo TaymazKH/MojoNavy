@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.paneController.ScorePaneController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="35.0" prefHeight="30.0" prefWidth="300.0" text="Username comes here">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.28">
+               <color>
+                  <Color red="0.9526975154876709" green="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label fx:id="scoreLabel" alignment="CENTER" layoutX="345.0" prefHeight="30.0" prefWidth="70.0" text="00000">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.28">
+               <color>
+                  <Color red="0.9526975154876709" green="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Circle fx:id="onlineStatusCircle" fill="#1f93ff" layoutX="20.0" layoutY="15.0" radius="6.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <DropShadow spread="0.28">
+               <color>
+                  <Color red="0.9526975154876709" green="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Circle>
+   </children>
+</Pane>

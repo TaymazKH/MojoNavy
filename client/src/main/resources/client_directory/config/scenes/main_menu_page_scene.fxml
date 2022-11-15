@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.MainMenuPageController">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/menu_background_1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="300.0" layoutY="155.0" mnemonicParsing="false" onAction="#startNewGame" opacity="0.95" prefHeight="38.0" prefWidth="200.0" text="Start New Game">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" height="40.07" radius="17.747500000000002" width="32.92">
+               <color>
+                  <Color red="0.20370370149612427" green="0.2567901313304901" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="205.0" mnemonicParsing="false" onAction="#showMyProfile" opacity="0.95" prefHeight="38.0" prefWidth="200.0" text="My Profile">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" height="40.07" radius="17.747500000000002" width="32.92">
+               <color>
+                  <Color red="0.20370370149612427" green="0.2567901313304901" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="255.0" mnemonicParsing="false" onAction="#showScoreBoard" opacity="0.95" prefHeight="38.0" prefWidth="200.0" text="Score Board">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" height="40.07" radius="17.747500000000002" width="32.92">
+               <color>
+                  <Color red="0.20370370149612427" green="0.2567901313304901" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="305.0" mnemonicParsing="false" onAction="#watchAnotherGame" opacity="0.95" prefHeight="38.0" prefWidth="200.0" text="Watch Another Game">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" height="40.07" radius="17.747500000000002" width="32.92">
+               <color>
+                  <Color red="0.20370370149612427" green="0.2567901313304901" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="372.0" mnemonicParsing="false" onAction="#exit" opacity="0.95" prefHeight="38.0" prefWidth="200.0" text="Exit">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" height="40.07" radius="17.747500000000002" width="32.92">
+               <color>
+                  <Color red="0.20370370149612427" green="0.2567901313304901" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="209.0" layoutY="31.0" prefHeight="94.0" prefWidth="381.0" text="MojoNavy" textFill="#103f9e">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.30000001192092896" green="0.5333333611488342" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

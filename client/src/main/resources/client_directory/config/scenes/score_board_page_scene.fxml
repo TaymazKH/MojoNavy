@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="449.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.fx_controller.ScoreBoardPageController">
+   <children>
+      <ImageView fitHeight="455.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/menu_background_1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="175.0" layoutY="25.0" prefHeight="58.0" prefWidth="450.0" text="Score Board" textFill="#103f9e">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.30000001192092896" green="0.5333333611488342" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="175.0" layoutY="94.0" opacity="0.7" prefHeight="300.0" prefWidth="450.0">
+         <content>
+            <VBox fx:id="box" prefHeight="50.0" prefWidth="430.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="118.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow height="34.11" radius="18.64" width="42.45">
+               <color>
+                  <Color red="0.005847953259944916" green="0.5021442770957947" blue="0.7894737124443054" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
